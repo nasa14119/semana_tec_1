@@ -10,8 +10,8 @@ Exercises
 """
 
 from turtle import *
-
 from freegames import vector
+from math import sqrt
 
 
 def line(start, end):
@@ -29,7 +29,7 @@ def square(start, end):
     down()
     begin_fill()
 
-    for count in range(4):
+    for _ in range(4):
         forward(end.x - start.x)
         left(90)
 
@@ -38,18 +38,27 @@ def square(start, end):
 
 def circle(start, end):
     """Draw circle from start to end."""
-    pass  # TODO
+    pass
 
 
 def rectangle(start, end):
     """Draw rectangle from start to end."""
-
-    pass  # TODO
+    up()
+    goto(start.x, start.y)
+    down()
+    begin_fill()
+    for _ in range(2):
+        h = (end.x - start.x) / 2
+        forward(end.x - start.x)
+        left(90)
+        forward(h)
+        left(90)
+    end_fill()
 
 
 def triangle(start, end):
     """Draw triangle from start to end."""
-    pass  # TODO
+    pass
 
 
 def tap(x, y):
