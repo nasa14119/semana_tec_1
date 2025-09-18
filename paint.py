@@ -71,12 +71,11 @@ def triangle(start, end):
     goto(start.x, start.y)
     mag = end.x - start.x
     forward(mag)
-    left(90)
     down()
     begin_fill()
     for _ in range(3):
-        forward(mag / 2)
-        left(60)
+        forward(mag)
+        left(120)
     end_fill()
 
 
