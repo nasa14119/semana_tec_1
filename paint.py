@@ -10,10 +10,7 @@ Exercises
 """
 
 from turtle import *
-
-
 from freegames import vector
-from math import sqrt
 
 
 def line(start, end):
